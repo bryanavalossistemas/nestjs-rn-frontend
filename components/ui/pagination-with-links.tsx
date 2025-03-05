@@ -37,7 +37,7 @@ export function PaginationWithLinks({
       newSearchParams.set(key, String(newPage));
       return `${pathname}?${newSearchParams.toString()}`;
     },
-    [searchParams, pathname]
+    [searchParams, pathname, pageSearchParam]
   );
 
   const renderPageNumbers = () => {

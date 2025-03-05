@@ -32,7 +32,7 @@ export function LoginForm() {
       await login(values);
       router.push("/dashboard");
       toast.success("Sesión iniciada correctamente");
-    } catch (error) {
+    } catch (_error) {
       toast.error("Error al iniciar sesión");
     }
   }

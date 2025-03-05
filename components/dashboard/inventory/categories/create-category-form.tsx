@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -36,7 +35,7 @@ export default function CreateCategoryForm() {
       await createCategory(values);
       router.push("/dashboard/inventory/categories");
       toast.success("Categoría creada correctamente");
-    } catch (error) {
+    } catch (_error) {
       toast.error("Error al crear la categoría");
     }
   }

@@ -107,7 +107,7 @@ export function NavUser({
                   await logout();
                   router.push("/auth/login");
                   toast.success("Sesión cerrada correctamente");
-                } catch (error) {
+                } catch (_error) {
                   toast.error("Error al cerrar sesión");
                 }
               }}
