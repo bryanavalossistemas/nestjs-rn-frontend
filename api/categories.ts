@@ -31,7 +31,7 @@ export async function fetchCategories(
 
 export async function createCategory(formData: CreateCategoryForm) {
   const token = cookies().get("session")?.value;
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/categories`, {
+  const res = await fetch(`${process.env.API_URL}/categories`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
